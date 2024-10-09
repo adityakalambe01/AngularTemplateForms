@@ -1,5 +1,5 @@
 <div class="form-wrapper">
-  <form action="" class="border" #form="ngForm">
+  <form #form="ngForm">
     <div class="form-field-wrapper">
       <label for="firstName">First Name</label>
       <br>
@@ -55,7 +55,9 @@
       <button class="submit" (click)="submit()" [disabled]="form.invalid">Submit</button>
     </div>
   </form>
-  {{studentDataFromForm | json}}
+  <div class="data">
+    {{studentDataFromForm | json}}
+  </div>
 </div>
 
 <br><br>

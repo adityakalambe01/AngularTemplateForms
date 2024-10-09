@@ -1,9 +1,13 @@
 .form-wrapper{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
+
+}
+
+.form-wrapper > .data{
+  width: 50%;
 }
 
 form{
@@ -12,6 +16,7 @@ form{
     width: 500px;
     margin-top: 5px;
     border-radius: 25px;
+    background-color: rgba(128, 128, 128, 0.303);
 }
 form div{
   padding: 10px;
@@ -26,6 +31,10 @@ input, select, option{
     margin-bottom: 5px;
     padding: 5px;
     width: 100%;
+}
+
+input:focus{
+  outline: none;
 }
 
 .border{
